@@ -2,7 +2,7 @@
 Установка пробной версии bitrix 1c на локальном сервере xampp.
 
 ## Установка
-1. Скачиваем [тут](https://www.apachefriends.org/ru/index.html).
+1. Скачиваем [xampp](https://www.apachefriends.org/ru/index.html).
 1. Скачиваем [отсюда](https://www.1c-bitrix.ru/download/cms.php#tab-subsection-2) bitrixsetup.php.
 1. Запускаем xampp, жмём Explorer и в папке htdocs создаём папку bitrix, внутрь копируем bitrixsetup.php.
 1. В Файле php.ini:
