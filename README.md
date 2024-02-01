@@ -10,7 +10,7 @@
     - Раскомментируем ```extension=gd```.
     - Меняем ```display_errors=On``` на ```display_errors=Off```.
 1. В браузере переходим на localhost/bitrix, открываем bitrixsetup.php, и следуем [инструкции из ЛМС](https://online.mospolytech.ru/mod/scorm/view.php?id=438858) до пункта "Начало установки". 
-1. В файле ```/bitrix/modules/main/classes/general/main.php``` комментируем 3407 строчку ```$uniq = Main\Security\Random::getString(32);``` и добавляем под ней ```$uniq = md5(uniqid(rand(), true));``` (Для фикса ошибки Fatal error: Out of memory (allocated 23494393856) (tried to allocate 262144 bytes)).
+1. В файле ```/bitrix/modules/main/classes/general/main.php``` комментируем 3407 строчку ```$uniq = Main\Security\Random::getString(32);``` и добавляем под ней ```$uniq = md5(uniqid(rand(), true));``` (Для фикса ошибки ```Fatal error: Out of memory (allocated 23494393856) (tried to allocate 262144 bytes)```).
 1. В пункте "Создание базы данных": 
     - пользовтель: root.
     - пароль: оставляем поле пустым.
